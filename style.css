@@ -1,0 +1,483 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+	color: #3A3A3A;
+	text-decoration: none;
+	display: block;
+}
+
+
+.warp{
+	font-size: 16px;
+	color: #3A3A3A;
+}
+
+.button{
+	width: 176px;
+	height: 38px;
+	text-align: center;
+	background-color: #F9C745;
+	border-radius: 23px ;
+}
+.button:hover{
+	cursor: pointer;
+}
+
+.header{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	background-color: #fff;
+}
+.topMenu{
+	display: flex;
+	height: 88px;
+	flex-direction: row-reverse;
+	align-items: center;
+	margin-right: 60px;
+}
+.topMenu a{
+	height: 40px;
+	width: auto;
+}
+.topMenu img{
+	position: absolute;
+	left: 62px;
+}
+.topMenu li{
+	margin-right: 48px;
+    position: relative;
+    float: right;
+	line-height: 40px;
+}
+.topMenu li:hover{
+	color: #F9C745;
+}
+.topMenu .button:hover{
+	color: #3A3A3A;
+	transition: box-shadow 0.3s;
+	box-shadow: 0 4px #3A3A3A;
+}
+.content{
+	background-image: url("images/lightpaperfibers.png");
+}
+.footer{
+	border-top: 3px solid #F9C745;
+}
+.footer ul{
+	width: 976px;
+	height: 223px;
+	margin: 0 auto;
+	display: flex;
+    /* flex-direction: row-reverse; */
+    justify-content: space-between;
+    align-items: center;
+}
+.footer img{
+	float: left;
+}
+/* .footer li{
+	position: relative;
+	float: right;
+	line-height: 127px;
+} */
+.footer li{
+	width: 464px;
+	line-height: 27px;
+	margin-left: 24px;
+}
+.footer .big{
+	font-size: 24px;
+}
+.footer .btn1{
+	background-color: #fff;
+	margin-top: 7px;
+	border: 1px solid #3A3A3A;
+	width: 176px;
+	height: 44px;
+	line-height: 44px;
+	font-size: 20px;
+}
+.footer .btn1:hover{
+	background-color:#F9C745;
+	border: 1px solid #F9C745;
+}
+.footer .cr{
+	height: 70px;
+	color: #FFFFFF;
+	background-color: #3A3A3A;
+	text-align: center;
+	line-height: 70px;
+}
+.active{
+	color: #F9C745;
+}
+.rwd{
+	display: none;
+	/* opacity: 0; */
+}
+
+/* .banner{
+	height: 810px;
+} */
+/* .diaText{
+    border: 5px solid #888888;
+    height: 65px;
+    margin-bottom: 10px;
+    position: relative;
+    width: 80px;
+}
+.diaText:before {
+    border-color: #888888 transparent transparent; 
+    border-style: solid solid solid; 
+    border-width: 20px 20px 20px 20px; 
+    bottom: -40px;
+ 
+    必須指定，才能顯示內容
+    content: "";
+ 
+    height: 0px;
+ 
+    必須指定，否則會變梯形
+    position: absolute;
+    left: 17px; 
+ 
+    width: 0px;
+}
+.diaText:after {
+    border-color: #fff transparent transparent; 
+    border-style: solid solid solid solid; 
+    border-width: 20px; 
+ 
+    必須指定，才能顯示內容
+    content: "";
+ 
+    height: 0px;
+ 
+    必須指定，否則會變梯形
+    position: absolute;
+        left: 17px;
+        bottom: -33px;
+
+    width: 0px;
+} */
+.banner{
+	margin-top: 88px;
+}
+.bn1{
+	height: 810px;
+	background:url("images/home.png")
+}
+
+
+.fixedbtn{
+	position: fixed;
+	right: 62px;
+	bottom: 0;
+	background-image: url("images/btn.png");
+}
+.fixedbtn:hover{
+	/* display: none; */
+	background-image: url("images/btn.png");
+}
+
+.service{
+	height: 486px;
+	margin-top: 80px;
+	margin-bottom: 80px;
+	margin-left: 172px;
+	vertical-align: middle;
+}
+.service .imgh2{
+	width: 648px;
+	height: 486px;
+	float: left;
+	background: url("images/home01.png");
+}
+.service .word{
+	float: right;
+	padding-top: 98px;
+	padding-left: 48px;
+	padding-right: 192px;
+	line-height: 32px;
+}
+
+.service .title{
+	color: #F9C745;
+	font-size: 24px;
+	height: 39px;
+}
+.service .boldWord{
+	font-size: 32px;
+	font-weight: bold;
+	padding-bottom: 11px;
+}
+.works{
+	width: 1320px;
+	margin: 0 auto;
+	margin-bottom: 79px;
+}
+.works img{
+	display:block;
+	margin: 0 auto;
+}
+.works ul{
+	display: flex;
+    justify-content: space-between;
+	margin-top: 40.25px;
+	margin-bottom: 50px;
+}
+.works li{
+	position: relative;
+}
+.works li .cover{
+	width: 312px;
+	height: 312px;
+	border-radius: 24px;
+	background:linear-gradient(#00000000,#0000005D);
+	position: absolute;
+	vertical-align: bottom;
+	opacity: 0;
+}
+.works li:hover .cover{
+	opacity: 1;
+	transition: opacity 0.3s;
+}
+.works li img{
+	width: 312px;
+	height: 312px;
+	border-radius: 24px;
+}
+.works .words{
+	align-items:flex-end;
+	position: absolute;
+	left: 24px;
+	bottom: 24px;
+}
+.works .deser{
+	color: #FFFFFF;
+}
+.works .name{
+	color: #FFFFFF;
+	font-size: 24px;
+}
+.works .buttons{
+	width: 476px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	line-height: 44px;
+	font-size: 20px;
+}
+.works .btn1{
+	background-color: #fff;
+	border: 1px solid #3A3A3A;
+	width: 216px;
+	height: 44px;
+}
+.works .btn1:hover{
+	background-color:#F9C745;
+	border: 1px solid #F9C745;
+}
+.works .btn2{
+	width: 236px;
+	height: 44px;
+}
+
+.adopt{
+	width: 1320px;
+	margin: 0 auto;
+	text-align: center;
+}
+.adopt img{
+	display:block;
+	margin: 0 auto;
+	margin-bottom: 24.25px;
+}
+.adopt ul{
+	display: flex;
+    justify-content: space-between;
+	margin-top: 48px;
+}
+.adopt li{
+	width: 424px;
+	height: 621px;
+	box-shadow: 0px 4px 8px #00000014;
+	background-color: #fff;
+	border-radius: 24px;
+}
+.adopt li:hover{
+	box-shadow: 0px 8px 12px #00000014;
+	background-color: #fff;
+	border-radius: 24px;
+}
+
+.adopt .imgs{
+	width: 424px;
+	height: 424px;
+	display:block;
+	margin: 0 auto;
+	border-radius: 24px 24px 0 0;
+
+}
+.adopt .img1{
+	background-image: url("images/dog01.png");
+}
+.adopt li:hover .img1{
+	background-image: url("images/dog01-hover-1.png");
+	transition: background-image 0.3s;
+}
+.adopt .img2{
+	background-image: url("images/04.png");
+}
+.adopt li:hover .img2{
+	background-image: url("images/dog01-hover.png");
+	transition: background-image 0.3s;
+}
+.adopt .img3{
+	background-image: url("images/08.png");
+}
+.adopt li:hover .img3{
+	background-image: url("images/dog01-hover-2.png");
+	transition: background-image 0.3s;
+}
+.adopt li:hover .more{
+	color: #F9C745;
+}
+.adopt .cont{
+	width: 376px;
+	height: 110px;
+	margin: 0 auto;
+	margin-top: 30px;
+	border-bottom: 1px solid #ECECEC;
+	text-align: left;
+}
+.adopt .title{
+	font-size: 16px;
+	font-weight: bold;
+}
+.adopt .words{
+	margin-top: 16px;
+	margin-bottom: 26px;
+	font-size: 16px;
+}
+.adopt .more{
+	font-size: 16px;
+	line-height: 57px;
+}
+.adopt .moreArea{
+	padding-top: 50px;
+	padding-bottom: 79px;
+}
+.adopt .btn1{
+	margin: 0 auto;
+	width: 216px;
+	height: 44px;
+	line-height: 44px;
+	font-size: 20px;
+	background-color: #fff;
+	border: 1px solid #3A3A3A;
+}
+.adopt .btn1:hover{
+	background-color:#F9C745;
+	border: 1px solid #F9C745;
+}
+
+
+
+.steps{
+	width: 1192px;
+	margin: 0 auto;
+	text-align: center;
+}
+.steps ul{
+	display: flex;
+    justify-content: space-between;
+	margin-top: 68px;
+	padding-bottom: 82px;
+}
+.steps .sno{
+	margin-top: 16px;
+	height: 32px;
+	font-size: 20px;
+	color: #F9C745;
+}
+.steps .title{
+	margin-top: 2px;
+	margin-bottom: 17px;
+	height: 28px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+@media (max-width:375px) {
+	.fixed{
+		display: none;
+	}
+	.topMenu li{
+		display: none;
+	}
+	.topMenu img{
+		left: 12px;
+	}
+	.rwd{
+		display: block;
+	}
+	.bn1{
+		background:url("images/home_mobile.png")
+	}
+	.imgh2{
+		background: url("images/title02.png");
+		float: right;
+	}
+	.service .word{
+		float: left;
+		padding: 0;
+	}
+	.service ul{
+		flex-direction: column-reverse;
+	}
+	/* .adopt img */
+}
